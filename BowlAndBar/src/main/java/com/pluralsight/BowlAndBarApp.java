@@ -1,7 +1,7 @@
 package com.pluralsight;
 
 
-public class Main {
+public class BowlAndBarApp {
     public static void main(String[] args) {
 
     }
