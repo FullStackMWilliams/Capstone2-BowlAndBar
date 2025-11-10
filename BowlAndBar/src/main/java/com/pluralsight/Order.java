@@ -26,4 +26,19 @@ public class Order {
         sides.add(side);
     }
 
+    public boolean isEmpty() {
+        return items.isEmpty() && drinks.isEmpty() && sides.isEmpty();
+    }
+
+    public boolean hasValidOrder() {
+        if (items.isEmpty()) {
+            return !drinks.isEmpty() || !sides.isEmpty();
+        }
+        return true;
+    }
+
+    public double getTotalPrice() {
+
+    }
+
 }
