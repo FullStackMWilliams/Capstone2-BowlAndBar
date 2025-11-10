@@ -21,5 +21,4 @@ public class Juice extends BowlItem {
         }
         return price;
     }
-
 }
