@@ -7,4 +7,16 @@ public class Side {
     private static final String[] TYPES = {
             "Energy Bites", "Protein Bar"
     };
+
+    public Side(String type) {
+        this.type = type;
+    }
+
+    public static String[] getTYPES() {
+        return TYPES;
+    }
+
+    public static double getPRICE() {
+        return PRICE;
+    }
 }
