@@ -14,4 +14,13 @@ public class YogurtBowl extends BowlItem {
     public static String[] getTypes() {
         return TYPES;
     }
+
+    @Override
+    public double getPrice() {
+        double price = getBasePrice() + getToppingsPrice();
+        if (specialized) {
+            price += 1.25;
+        }
+        return price;
+    }
 }
