@@ -16,12 +16,12 @@ public class Side {
         return TYPES;
     }
 
-    public static double getPRICE() {
+    public static double getPrice() {
         return PRICE;
     }
 
     @Override
     public String toString() {
-        return type + " - $" + String.format("%.2f", getPRICE());
+        return type + " - $" + String.format("%.2f", getPrice());
     }
 }

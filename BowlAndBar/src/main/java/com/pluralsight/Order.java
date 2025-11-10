@@ -38,7 +38,17 @@ public class Order {
     }
 
     public double getTotalPrice() {
-
+        double total = 0.0;
+        for (BowlItem item : items) {
+            total += item.getPrice();
+        }
+        for (Drink drink : drinks) {
+            total += drink.getPrice();
+        }
+        for (Side side : sides) {
+            total += side.getPrice();
+        }
+        return total;
     }
 
 }
