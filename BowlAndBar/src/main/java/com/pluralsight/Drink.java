@@ -22,4 +22,9 @@ public class Drink {
     public double getPrice() {
         return size.getPrice();
     }
+
+    @Override
+    public String toString() {
+        return size + " " + flavor + " - $" + String.format("%.2f", getPrice());
+    }
 }
