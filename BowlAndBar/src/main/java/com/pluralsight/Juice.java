@@ -21,4 +21,9 @@ public class Juice extends BowlItem {
         }
         return price;
     }
+
+    @Override
+    public String toString() {
+        return "Juice - " + super.toString();
+    }
 }
