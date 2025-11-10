@@ -66,6 +66,27 @@ public class Order {
                 sb.append("   Price: $").append(String.format("%.2f", items.get(i).getPrice())).append("\n\n");
             }
         }
-        if ()
+        if (!drinks.isEmpty()) {
+            sb.append("DRINKS:\n");
+            sb.append("--------------------------------------\n");
+            for (int i = 0; i < drinks.size(); i++) {
+                sb.append((i + 1)).append(". ").append(drinks.get(i)).append("\n");
+            }
+            sb.append("\n");
+        }
+        if (!sides.isEmpty()) {
+            sb.append("SIDES: \n");
+            sb.append("-----------------------------------------\n");
+            for (int i = 0; i < sides.size(); i++) {
+                sb.append((i + 1)).append(". ").append(sides.get(i)).append("\n");
+            }
+            sb.append("\n");
+        }
+
+        sb.append("===============================================\n");
+        sb.append("TOTAL: $").append(String.format("%.2f", getTotalPrice())).append("\n");
+        sb.append("===============================================\n");
+
+        return sb.toString();
     }
 }
