@@ -19,4 +19,9 @@ public class Side {
     public static double getPRICE() {
         return PRICE;
     }
+
+    @Override
+    public String toString() {
+        return type + " - $" + String.format("%.2f", getPRICE());
+    }
 }
