@@ -14,4 +14,16 @@ public class Order {
         this.sides = new ArrayList<>();
     }
 
+    public void addItem(BowlItem item) {
+        items.add(item);
+    }
+
+    public void addDrink(Drink drink) {
+        drinks.add(drink);
+    }
+
+    public void addSide(Side side) {
+        sides.add(side);
+    }
+
 }
