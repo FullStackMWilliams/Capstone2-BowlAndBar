@@ -52,4 +52,20 @@ public abstract class BowlItem {
         }
         return total;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(size).append(" ").append(type);
+        if (specialized) {
+            sb.append(" (Specialized)");
+        }
+        if (!toppings.isEmpty()) {
+            sb.append("\n Toppings:");
+            for (Topping topping : toppings) {
+                sb.append("\n     - ").append(topping);
+            }
+        }
+        return sb.toString();
+    }
 }
