@@ -14,4 +14,12 @@ public class Drink {
         this.size = size;
         this.flavor = flavor;
     }
+
+    public static String[] getFlavors() {
+        return Flavors;
+    }
+
+    public double getPrice() {
+        return size.getPrice();
+    }
 }
