@@ -51,4 +51,21 @@ public class Order {
         return total;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("\n===================================\n");
+        sb.append("          BOWL & BAR ORDER           \n");
+        sb.append("=======================================");
+
+        if (!items.isEmpty()) {
+            sb.append("ITEMS:\n");
+            sb.append("-----------------------------------\n");
+            for (int i = 0; i < items.size(); i++) {
+                sb.append((i + 1)).append(". ").append(items.get(i)).append("\n");
+                sb.append("   Price: $").append(String.format("%.2f", items.get(i).getPrice())).append("\n\n");
+            }
+        }
+        if ()
+    }
 }
