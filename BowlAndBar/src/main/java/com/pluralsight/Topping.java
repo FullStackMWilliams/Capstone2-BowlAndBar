@@ -26,4 +26,6 @@ public class Topping {
     public boolean isExtra() {
         return extra;
     }
+
+    //  Switch cases for toppings/topping options and prices
 }
