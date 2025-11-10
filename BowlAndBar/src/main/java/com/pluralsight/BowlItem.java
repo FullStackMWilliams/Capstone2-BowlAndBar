@@ -37,6 +37,19 @@ public abstract class BowlItem {
     public abstract double getPrice();
 
     protected double getBasePrice() {
+        switch (size) {
+            case SMALL: return 3.50;
+            case MEDIUM: return 7.25;
+            case LARGE: return 9.50;
+            default: return 0.0;
+        }
+    }
 
+    protected double getToppingsPrice() {
+        double total = 0.0;
+        for (Topping topping : toppings) {
+            total += topping.getPrice(size);
+        }
+        return total;
     }
 }
