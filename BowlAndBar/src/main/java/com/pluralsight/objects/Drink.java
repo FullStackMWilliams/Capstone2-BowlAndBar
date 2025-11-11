@@ -1,4 +1,4 @@
-package com.pluralsight;
+package com.pluralsight.objects;
 
 import com.pluralsight.enums.DrinkSize;
 

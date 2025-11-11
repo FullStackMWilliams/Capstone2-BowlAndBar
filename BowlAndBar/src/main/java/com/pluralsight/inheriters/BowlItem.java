@@ -1,5 +1,6 @@
-package com.pluralsight;
+package com.pluralsight.inheriters;
 
+import com.pluralsight.objects.Topping;
 import com.pluralsight.enums.ItemSize;
 
 import java.util.ArrayList;

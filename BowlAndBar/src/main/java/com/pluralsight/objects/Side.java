@@ -1,4 +1,4 @@
-package com.pluralsight;
+package com.pluralsight.objects;
 
 public class Side {
     private String type;

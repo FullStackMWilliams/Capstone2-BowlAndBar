@@ -1,11 +1,9 @@
-package com.pluralsight;
+package com.pluralsight.objects;
 
 // This class will let us define our topping options
 
 import com.pluralsight.enums.ItemSize;
 import com.pluralsight.enums.ToppingCategory;
-
-import static com.pluralsight.enums.ToppingCategory.PREMIUM;
 
 public class Topping {
     private String name;

@@ -1,4 +1,4 @@
-package com.pluralsight;
+package com.pluralsight.objects;
 
 import java.io.File;
 import java.io.FileWriter;

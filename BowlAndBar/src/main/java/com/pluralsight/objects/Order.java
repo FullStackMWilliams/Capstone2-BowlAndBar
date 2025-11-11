@@ -1,4 +1,6 @@
-package com.pluralsight;
+package com.pluralsight.objects;
+
+import com.pluralsight.inheriters.BowlItem;
 
 import java.util.ArrayList;
 import java.util.List;
