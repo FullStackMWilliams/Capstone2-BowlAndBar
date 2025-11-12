@@ -183,6 +183,9 @@ public class BowlAndBarApp {
 
          String[] flavors = Drink.getFlavors();
          System.out.println("Select flavor:");
+         for (int i = 0; i < flavors.length; i++) {
+             System.out.println((i + 1) + ") " + flavors[i]);
+         }
      }
 
 
