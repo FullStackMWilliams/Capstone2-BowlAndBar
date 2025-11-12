@@ -53,6 +53,10 @@ public class BowlAndBarApp {
 
         boolean running = true;
 
+        while (running) {
+            displayHomeScreen();
+        }
+
 
     }
 
@@ -137,5 +141,18 @@ public class BowlAndBarApp {
          } else
              System.out.println("Order ");
          return false;
+     }
+
+     private int getIntInput(String prompt) {
+         System.out.println(prompt);
+
+         while (!scanner.hasNextInt()) {
+             scanner.nextLine();
+             System.out.println("Please enter a valid number");
+         }
+
+         int value = scanner.nextInt();
+         scanner.nextLine();
+         return value;
      }
 }
