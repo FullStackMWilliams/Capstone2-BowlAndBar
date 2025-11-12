@@ -258,6 +258,9 @@ public class BowlAndBarApp {
          ItemSize size = selectSize();
          if (size == null) return null;
 
+         Juice juice = new Juice(size, types[typeChoice]);
+
+        return juice;
      }
 
 
@@ -293,6 +296,18 @@ public class BowlAndBarApp {
                  System.out.println("Invalid size.");
                  return null;
          }
+     }
+
+
+     private void addToppingToItem(BowlItem item) {
+
+        addToppingCategory(item,"PROTEINS",PROTEINS,ToppingCategory.PROTEIN);
+
+        addToppingCategory(item,"PREMIUM TOPPINGS",PREMIUM_TOPPINGS,ToppingCategory.PREMIUM);
+
+        addToppingCategory(item,"REGULAR TOPPINGS",REGULAR_TOPPINGS,ToppingCategory.REGULAR);
+
+        addToppingCategory(item,"CONDIMENTS",CONDIMENTS,ToppingCategory.CONDIMENT);
      }
 
 
