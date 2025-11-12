@@ -2,6 +2,7 @@ package com.pluralsight;
 
 import com.pluralsight.objects.Drink;
 import com.pluralsight.objects.Order;
+import com.pluralsight.objects.Side;
 
 import java.util.Scanner;
 
@@ -91,6 +92,7 @@ public class BowlAndBarApp {
         System.out.println("0) Cancel");
 
     }
+
      private void addDrink() {
          System.out.println("\n====================================");
          System.out.println("ADD DRINK");
@@ -98,6 +100,14 @@ public class BowlAndBarApp {
 
          String[] flavors = Drink.getFlavors();
          System.out.println("Select flavor:");
+     }
+
+     private void addSide() {
+         System.out.println("\n======================================");
+         System.out.println("ADD MAIN SIDE");
+         System.out.println("=========================================");
+
+
      }
 }
 
