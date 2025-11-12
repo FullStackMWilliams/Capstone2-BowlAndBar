@@ -138,6 +138,4 @@ public class BowlAndBarApp {
              System.out.println("Order ");
          return false;
      }
-
-
 }
