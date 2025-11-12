@@ -282,6 +282,16 @@ public class BowlAndBarApp {
              return null;
 
          YogurtBowl bowl = new YogurtBowl(size, types[typeChoice]);
+
+         addToppingToItem(bowl);
+
+         System.out.print("Would you like it as a layered bowl? (+1.25) (y/n): ");
+         String special = scanner.nextLine().trim().toLowerCase();
+         if (special.equals("y") || special.equals("yes")) {
+             bowl.setSpecialized(true);
+         }
+
+         return bowl;
      }
 
 
