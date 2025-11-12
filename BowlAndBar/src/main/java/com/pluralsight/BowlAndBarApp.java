@@ -169,7 +169,12 @@ public class BowlAndBarApp {
                 return;
         }
 
+        if (item != null) {
+            currentOrder.addItem(item);
+            System.out.println("\nItem added to order!");
+        }
     }
+
 
      private void addDrink() {
          System.out.println("\n====================================");
@@ -180,12 +185,14 @@ public class BowlAndBarApp {
          System.out.println("Select flavor:");
      }
 
+
      private void addSide() {
          System.out.println("\n======================================");
          System.out.println("ADD MAIN SIDE");
          System.out.println("=========================================");
 
      }
+
 
      private boolean checkout() {
 
@@ -215,6 +222,7 @@ public class BowlAndBarApp {
          return false;
      }
 
+
      private Smoothie createSmoothie() {
 
          String[] types = Smoothie.getTypes();
@@ -232,6 +240,7 @@ public class BowlAndBarApp {
          return null;
      }
 
+
      private Juice createJuice() {
 
         String[] types = Juice.getTypes();
@@ -247,6 +256,7 @@ public class BowlAndBarApp {
          }
          return null;
      }
+
 
      private YogurtBowl createYogurtBowl() {
 
@@ -264,6 +274,7 @@ public class BowlAndBarApp {
          return null;
      }
 
+
      private ItemSize selectSize() {
          System.out.println("\nSelect size:");
          System.out.println("1) Small - $");
@@ -280,6 +291,7 @@ public class BowlAndBarApp {
                  return null;
          }
      }
+
 
      private void addToppingCategory(BowlItem item, String categoryName, String[] options, ToppingCategory category) {
          System.out.println("\n" + categoryName + ":");
@@ -311,6 +323,7 @@ public class BowlAndBarApp {
              }
          }
      }
+
 
      private int getIntInput(String prompt) {
          System.out.println(prompt);
