@@ -59,6 +59,8 @@ public class BowlAndBarApp {
 
         while (running) {
             displayHomeScreen();
+            int choice = getIntInput("Select an option: ");
+
         }
 
 
@@ -71,6 +73,11 @@ public class BowlAndBarApp {
         System.out.println("0) Exit");
         System.out.println("========================================");
 
+    }
+
+    private void startNewOrder() {
+        currentOrder = new Order();
+        displayOrderScreen();
     }
 
     private void displayOrderScreen() {
