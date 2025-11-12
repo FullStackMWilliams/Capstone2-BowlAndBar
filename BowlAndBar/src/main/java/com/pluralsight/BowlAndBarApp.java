@@ -1,5 +1,6 @@
 package com.pluralsight;
 
+import com.pluralsight.enums.DrinkSize;
 import com.pluralsight.enums.ItemSize;
 import com.pluralsight.enums.ToppingCategory;
 import com.pluralsight.inheriters.BowlItem;
@@ -186,6 +187,14 @@ public class BowlAndBarApp {
          for (int i = 0; i < flavors.length; i++) {
              System.out.println((i + 1) + ") " + flavors[i]);
          }
+
+         System.out.println("\nSelect size");
+         System.out.println("1) Small - $2.00");
+         System.out.println("2) Medium - $2.50");
+         System.out.println("3) Large - $3.00");
+
+         int sizeChoice = getIntInput("Choose: ");
+         DrinkSize size = null;
      }
 
 
