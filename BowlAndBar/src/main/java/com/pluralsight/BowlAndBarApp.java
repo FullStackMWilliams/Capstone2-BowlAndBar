@@ -236,6 +236,12 @@ public class BowlAndBarApp {
              System.out.println((i + 1) + ") " + options[i]);
          }
          System.out.println("0) Done");
+
+         while (true) {
+             int choice = getIntInput("Add topping (or 0 when done): ") -1;
+
+             if (choice == -1) break;
+         }
      }
 
      private int getIntInput(String prompt) {
