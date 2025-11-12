@@ -254,15 +254,18 @@ public class BowlAndBarApp {
          System.out.println("\nConfirm order? (y/n): ");
          String confirm = scanner.nextLine().trim().toLowerCase();
 
-         if(confirm.equals("y") || confirm.equals("yes")) {
+         if (confirm.equals("y") || confirm.equals("yes")) {
 
              ReceiptWriter.writeReceipt(currentOrder);
              System.out.println("\n Order confirmed! Thank you for your purchased!");
              currentOrder = null;
+             return true;
 
-         } else
-             System.out.println("Order ");
-         return false;
+         } else {
+             System.out.println("Order cancelled.");
+             currentOrder = null;
+             return true;
+         }
      }
 
 
