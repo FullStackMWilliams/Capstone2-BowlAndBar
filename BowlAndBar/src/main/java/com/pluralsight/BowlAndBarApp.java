@@ -291,7 +291,7 @@ public class BowlAndBarApp {
              return null;
          }
 
-         return null;
+         return null
      }
 
 
@@ -412,7 +412,7 @@ public class BowlAndBarApp {
 
 
      private int getIntInput(String prompt) {
-         System.out.println(prompt);
+         System.out.print(prompt);
 
          while (!scanner.hasNextInt()) {
              scanner.nextLine();
