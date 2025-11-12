@@ -243,8 +243,15 @@ public class BowlAndBarApp {
                  item.addTopping(new Topping(options[choice], category, false ));
                  System.out.println("Added " + options[choice]);
 
-                 if (category == ToppingCategory.PROTEIN || category == ToppingCategory.PREMIUM) {
+                 if (category == ToppingCategory.REGULAR || category == ToppingCategory.PREMIUM || category == ToppingCategory.PROTEIN) {
                      System.out.println("Would you like etra? (y/n): ");
+                     String extra = scanner.nextLine().trim().toLowerCase();
+                     if (extra.equals("y") || extra.equals("yes")) {
+                         item.addTopping(new Topping(options[choice],category,true ));
+                         System.out.println("Added extra " + options[choice]);
+                     }
+                 } else {
+                     System.out.println("Invalid selection");
                  }
              }
          }
