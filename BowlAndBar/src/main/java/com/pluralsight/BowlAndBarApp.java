@@ -61,9 +61,16 @@ public class BowlAndBarApp {
             displayHomeScreen();
             int choice = getIntInput("Select an option: ");
 
+            switch (choice) {
+                case 1: startNewOrder();
+                case 0: running = false;
+                    System.out.println("\nThank you for visiting Bowl & Bar!");
+                    break;
+                default:
+                    System.out.println("Invalid option. Please try again.");
+            }
         }
-
-
+        scanner.close();
     }
 
     private void displayHomeScreen() {
