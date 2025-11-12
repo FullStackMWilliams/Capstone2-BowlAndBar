@@ -32,7 +32,6 @@ public class BowlAndBarApp {
 
     private static final String[] CONDIMENTS = {
             "Agave Syrup", "Maple Syrup", "Cinnamon", "Vanilla extract", "Coco powder", "Mint"
-
     };
 
     public BowlAndBarApp() {
@@ -45,6 +44,7 @@ public class BowlAndBarApp {
         BowlAndBarApp app = new BowlAndBarApp();
         app.run();
     }
+
 
     public void run() {
 
@@ -73,6 +73,7 @@ public class BowlAndBarApp {
         scanner.close();
     }
 
+
     private void displayHomeScreen() {
         System.out.println("\n===============================");
         System.out.println("HOME SCREEN");
@@ -82,10 +83,12 @@ public class BowlAndBarApp {
 
     }
 
+
     private void startNewOrder() {
         currentOrder = new Order();
         displayOrderScreen();
     }
+
 
     private void displayOrderScreen() {
         boolean orderActive = true;
@@ -101,6 +104,34 @@ public class BowlAndBarApp {
             System.out.println("0) Cancel Order");
             System.out.println("============================================");
 
+            int choice = getIntInput("Select an option: ");
+
+            switch (choice) {
+                case 1:
+                    addItem();
+                    break;
+
+                case 2:
+                    addDrink();
+                    break;
+
+                case 3:
+                    addSide();
+                    break;
+
+                case 4:
+                    orderActive = !checkout();
+                    break;
+
+                case 0:
+                    System.out.println("\nOrder cancelled.");
+                    currentOrder = null;
+                    orderActive = false;
+                    break;
+
+                default:
+                    System.out.println("Invalid option. Please try again.");
+            }
         }
     }
 
