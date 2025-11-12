@@ -1,5 +1,6 @@
 package com.pluralsight;
 
+import com.pluralsight.objects.Drink;
 import com.pluralsight.objects.Order;
 
 import java.util.Scanner;
@@ -90,6 +91,14 @@ public class BowlAndBarApp {
         System.out.println("0) Cancel");
 
     }
+     private void addDrink() {
+         System.out.println("\n====================================");
+         System.out.println("ADD DRINK");
+         System.out.println("=======================================");
+
+         String[] flavors = Drink.getFlavors();
+         System.out.println("Select flavor:");
+     }
 }
 
 
