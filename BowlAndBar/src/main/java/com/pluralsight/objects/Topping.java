@@ -5,6 +5,8 @@ package com.pluralsight.objects;
 import com.pluralsight.enums.ItemSize;
 import com.pluralsight.enums.ToppingCategory;
 
+import static com.pluralsight.enums.ItemSize.*;
+
 public class Topping {
     private String name;
     private ToppingCategory category;
@@ -65,7 +67,23 @@ public class Topping {
                 }
                 break;
             case REGULAR:
+                if (extra) {
+                    switch (size) {
+                        case SMALL: return 0.25;
+                        case MEDIUM: return 0.50;
+                        case LARGE: return 0.75;
+                    }
+                }
+                return 0.0;
+
             case CONDIMENT:
+                if (extra) {
+                    switch (size) {
+                        case SMALL: return 0.20;
+                        case MEDIUM: return 0.40;
+                        case LARGE: return 0.60;
+                    }
+                }
                 return 0.0;
         }
 
@@ -75,7 +93,7 @@ public class Topping {
     @Override
     public String toString(){
         String result = name;
-        if(extra) {
+        if (extra) {
             result += " (Extra)";
         }
         return result;

@@ -63,10 +63,14 @@ public class BowlAndBarApp {
             int choice = getIntInput("Select an option: ");
 
             switch (choice) {
-                case 1: startNewOrder();
-                case 0: running = false;
+                case 1:
+                    startNewOrder();
+                        break;
+
+                case 0:
+                    running = false;
                     System.out.println("\nThank you for visiting Bowl & Bar!");
-                    break;
+                        break;
                 default:
                     System.out.println("Invalid option. Please try again.");
             }
@@ -78,6 +82,7 @@ public class BowlAndBarApp {
     private void displayHomeScreen() {
         System.out.println("\n===============================");
         System.out.println("HOME SCREEN");
+        System.out.println("===============================");
         System.out.println("1) New Order");
         System.out.println("0) Exit");
         System.out.println("===============================");
