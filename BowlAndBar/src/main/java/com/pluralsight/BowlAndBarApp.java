@@ -2,8 +2,10 @@ package com.pluralsight;
 
 import com.pluralsight.objects.Drink;
 import com.pluralsight.objects.Order;
+import com.pluralsight.objects.ReceiptWriter;
 import com.pluralsight.objects.Side;
 
+import javax.swing.text.Style;
 import java.util.Scanner;
 
 
@@ -107,8 +109,35 @@ public class BowlAndBarApp {
          System.out.println("ADD MAIN SIDE");
          System.out.println("=========================================");
 
-
      }
+
+     private boolean checkout() {
+
+        if (currentOrder.isEmpty()) {
+            System.out.println("\nYour order is empty! Please add item to checkout.");
+            return false;
+        }
+
+        if (!currentOrder.hasValidOrder()) {
+            System.out.println("\nIf you don't order any items, you must purchase a side or drink.");
+            return false;
+        }
+
+         System.out.println(currentOrder);
+
+         System.out.println("\nConfirm order? (y/n): ");
+         String confirm = scanner.nextLine().trim().toLowerCase();
+
+         if(confirm.equals("y") || confirm.equals("yes")) {
+
+             ReceiptWriter.writeReceipt(currentOrder);
+             System.out.println("\n Order confirmed! Thank you for your purchased!");
+             currentOrder = null;
+
+         } else
+             System.out.println("Order ");
+         return false;
+     }
+
+
 }
-
-
