@@ -6,10 +6,7 @@ import com.pluralsight.inheriters.BowlItem;
 import com.pluralsight.inheriters.Juice;
 import com.pluralsight.inheriters.Smoothie;
 import com.pluralsight.inheriters.YogurtBowl;
-import com.pluralsight.objects.Drink;
-import com.pluralsight.objects.Order;
-import com.pluralsight.objects.ReceiptWriter;
-import com.pluralsight.objects.Side;
+import com.pluralsight.objects.*;
 
 import javax.swing.text.Style;
 import java.util.Scanner;
@@ -241,6 +238,15 @@ public class BowlAndBarApp {
              int choice = getIntInput("Add topping (or 0 when done): ") -1;
 
              if (choice == -1) break;
+
+             if (choice >= 0 && choice < options.length) {
+                 item.addTopping(new Topping(options[choice], category, false ));
+                 System.out.println("Added " + options[choice]);
+
+                 if (category == ToppingCategory.PROTEIN || category == ToppingCategory.PREMIUM) {
+                     System.out.println("Would you like etra? (y/n): ");
+                 }
+             }
          }
      }
 
