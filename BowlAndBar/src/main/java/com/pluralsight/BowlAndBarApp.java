@@ -217,6 +217,12 @@ public class BowlAndBarApp {
          System.out.println("ADD MAIN SIDE");
          System.out.println("=========================================");
 
+         String[] types = Side.getTYPES();
+         System.out.println("Select sides: ");
+         for (int i = 0; i < types.length; i++) {
+             System.out.println((i + 1) + ") " + types[i] + " - $1.50");
+         }
+
      }
 
 
