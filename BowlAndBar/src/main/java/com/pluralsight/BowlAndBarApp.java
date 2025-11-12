@@ -196,6 +196,23 @@ public class BowlAndBarApp {
          return null;
      }
 
+     private ItemSize selectSize() {
+         System.out.println("\nSelect size:");
+         System.out.println("1) Small - $");
+         System.out.println("2) Medium - $");
+         System.out.println("3) Large - $");
+
+         int sizeChoice = getIntInput("Choose: ");
+         switch (sizeChoice) {
+             case 1: return ItemSize.SMALL;
+             case 2: return ItemSize.MEDIUM;
+             case 3: return ItemSize.LARGE;
+             default:
+                 System.out.println("Invalid size.");
+                 return null;
+         }
+     }
+
      private int getIntInput(String prompt) {
          System.out.println(prompt);
 
