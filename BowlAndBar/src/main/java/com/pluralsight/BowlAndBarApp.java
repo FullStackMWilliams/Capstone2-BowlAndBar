@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import com.pluralsight.enums.ItemSize;
+import com.pluralsight.inheriters.Smoothie;
 import com.pluralsight.objects.Drink;
 import com.pluralsight.objects.Order;
 import com.pluralsight.objects.ReceiptWriter;
@@ -141,6 +143,23 @@ public class BowlAndBarApp {
          } else
              System.out.println("Order ");
          return false;
+     }
+
+     private Smoothie createSmoothie() {
+
+         String[] types = Smoothie.getTypes();
+         System.out.println("\nSelect smoothie type:");
+         for (int i = 0; i < types.length; i++) {
+             System.out.println((i + 1) + ") " + types[i]);
+         }
+
+         int typeChoice = getIntInput("Choose: ") - 1;
+         if (typeChoice < 0 || typeChoice >= types.length) {
+             System.out.println("Invalid selection.");
+             return null;
+         }
+
+         return null;
      }
 
      private int getIntInput(String prompt) {
