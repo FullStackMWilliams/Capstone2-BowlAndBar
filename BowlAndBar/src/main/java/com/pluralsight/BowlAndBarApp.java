@@ -327,6 +327,14 @@ public class BowlAndBarApp {
 
          Juice juice = new Juice(size, types[typeChoice]);
 
+         addToppingToItem(juice);
+
+         System.out.println("Would you like cold pressed? (+$0.75) (y/n): ");
+         String special = scanner.nextLine().trim().toLowerCase();
+         if (special.equals("y") || special.equals("yes")) {
+             juice.setSpecialized(true);
+         }
+
         return juice;
      }
 
