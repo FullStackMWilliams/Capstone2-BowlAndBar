@@ -5,8 +5,6 @@ package com.pluralsight.objects;
 import com.pluralsight.enums.ItemSize;
 import com.pluralsight.enums.ToppingCategory;
 
-import static com.pluralsight.enums.ItemSize.*;
-
 public class Topping {
     private String name;
     private ToppingCategory category;

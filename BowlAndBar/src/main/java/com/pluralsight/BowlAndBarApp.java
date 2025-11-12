@@ -321,7 +321,7 @@ public class BowlAndBarApp {
              System.out.println((i + 1) + ")" + types[i]);
          }
 
-         int typeChoice = getIntInput("Choose: ") -1;
+         int typeChoice = getIntInput("Choose: ") - 1;
          if (typeChoice < 0 || typeChoice >= types.length) {
              System.out.println("Invalid selection.");
              return null;
@@ -414,9 +414,9 @@ public class BowlAndBarApp {
          System.out.println("0) Done");
 
          while (true) {
-             int choice = getIntInput("Add topping (or 0 when done): ") -1;
+             int choice = getIntInput("Add topping (or 0 when done): ");
 
-             if (choice == -1) break;
+             if (choice == 0) break;
 
              if (choice >= 0 && choice < options.length) {
                  item.addTopping(new Topping(options[choice], category, false ));
