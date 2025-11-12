@@ -229,6 +229,10 @@ public class BowlAndBarApp {
              return;
          }
 
+         Side side = new Side(types[choice]);
+         currentOrder.addSide(side);
+         System.out.println("Side added to order!");
+
 
      }
 
