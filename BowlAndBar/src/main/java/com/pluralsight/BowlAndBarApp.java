@@ -1,6 +1,8 @@
 package com.pluralsight;
 
 import com.pluralsight.enums.ItemSize;
+import com.pluralsight.enums.ToppingCategory;
+import com.pluralsight.inheriters.BowlItem;
 import com.pluralsight.inheriters.Juice;
 import com.pluralsight.inheriters.Smoothie;
 import com.pluralsight.inheriters.YogurtBowl;
@@ -225,6 +227,15 @@ public class BowlAndBarApp {
                  System.out.println("Invalid size.");
                  return null;
          }
+     }
+
+     private void addToppingCategory(BowlItem item, String categoryName, String[] options, ToppingCategory category) {
+         System.out.println("\n" + categoryName + ":");
+
+         for (int i = 0; i < options.length; i++) {
+             System.out.println((i + 1) + ") " + options[i]);
+         }
+         System.out.println("0) Done");
      }
 
      private int getIntInput(String prompt) {
