@@ -291,7 +291,20 @@ public class BowlAndBarApp {
              return null;
          }
 
-         return null
+         ItemSize size = selectSize();
+         if (size == null) return null;
+
+         Smoothie smoothie = new Smoothie(size, types[typeChoice]);
+
+         addToppingToItem(smoothie);
+
+         System.out.println("Would you like to add a protein boost? (+1.00) (y/n): ");
+         String special = scanner.nextLine().trim().toLowerCase();
+         if (special.equals("y") || special.equals("yes")) {
+             smoothie.setSpecialized(true);
+         }
+
+         return smoothie;
      }
 
 
