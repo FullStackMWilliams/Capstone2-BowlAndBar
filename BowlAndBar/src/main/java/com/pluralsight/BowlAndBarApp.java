@@ -48,7 +48,7 @@ public class BowlAndBarApp {
 
     public void run() {
 
-        System.out.println("\n======================================");
+        System.out.println("\n========================================");
         System.out.println("|        WELCOME TO BOWL & BAR!        |");
         System.out.println("|    Fresh Smoothies, Juices & Bowls   |");
         System.out.println("|                                      |");
@@ -73,11 +73,11 @@ public class BowlAndBarApp {
     }
 
     private void displayHomeScreen() {
-        System.out.println("\n======================================");
+        System.out.println("\n===============================");
         System.out.println("HOME SCREEN");
         System.out.println("1) New Order");
         System.out.println("0) Exit");
-        System.out.println("========================================");
+        System.out.println("===============================");
 
     }
 
