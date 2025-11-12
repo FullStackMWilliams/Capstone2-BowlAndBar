@@ -152,7 +152,21 @@ public class BowlAndBarApp {
         BowlItem item = null;
 
         switch (itemType) {
+            case 1:
+                item = createSmoothie();
+                break;
 
+            case 2:
+                item = createJuice();
+                break;
+
+            case 3:
+                item = createYogurtBowl();
+                break;
+
+            default:
+                System.out.println("Invalid selection.");
+                return;
         }
 
     }
