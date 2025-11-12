@@ -405,36 +405,50 @@ public class BowlAndBarApp {
      }
 
 
-     private void addToppingCategory(BowlItem item, String categoryName, String[] options, ToppingCategory category) {
-         System.out.println("\n" + categoryName + ":");
+    private void addToppingCategory(BowlItem item, String categoryName, String[] options, ToppingCategory category) {
+        System.out.println("\n" + categoryName + ":");
 
-         for (int i = 0; i < options.length; i++) {
-             System.out.println((i + 1) + ") " + options[i]);
-         }
-         System.out.println("0) Done");
+        for (int i = 0; i < options.length; i++) {
+            System.out.println((i + 1) + ") " + options[i]);
+        }
+        System.out.println("0) Done");
 
-         while (true) {
-             int choice = getIntInput("Add topping (or 0 when done): ");
+        while (true) {
+            int choice = getIntInput("Add topping (or 0 when done): ");
 
-             if (choice == 0) break;
+            if (choice == 0) break;  // User is done
 
-             if (choice >= 0 && choice < options.length) {
-                 item.addTopping(new Topping(options[choice], category, false ));
-                 System.out.println("Added " + options[choice]);
+            // Convert to 0-based index
+            int index = choice - 1;
 
-                 if (category == ToppingCategory.REGULAR || category == ToppingCategory.PREMIUM || category == ToppingCategory.PROTEIN) {
-                     System.out.println("Would you like etra? (y/n): ");
-                     String extra = scanner.nextLine().trim().toLowerCase();
-                     if (extra.equals("y") || extra.equals("yes")) {
-                         item.addTopping(new Topping(options[choice],category,true ));
-                         System.out.println("Added extra " + options[choice]);
-                     }
-                 } else {
-                     System.out.println("Invalid selection");
-                 }
-             }
-         }
-     }
+            if (index >= 0 && index < options.length) {
+
+                item.addTopping(new Topping(options[index], category, false));
+                System.out.println("Added " + options[index]);
+
+
+                System.out.print("Would you like extra? (y/n): ");
+                String extra = scanner.nextLine().trim().toLowerCase();
+                if (extra.equals("y") || extra.equals("yes")) {
+                    item.addTopping(new Topping(options[index], category, true));
+                    System.out.println("Added extra " + options[index]);
+
+
+                    if (category == ToppingCategory.PROTEIN) {
+                        System.out.println("   (Extra protein charge applies)");
+                    } else if (category == ToppingCategory.PREMIUM) {
+                        System.out.println("   (Extra premium charge applies)");
+                    } else if (category == ToppingCategory.REGULAR) {
+                        System.out.println("   (Extra regular topping charge applies)");
+                    } else if (category == ToppingCategory.CONDIMENT) {
+                        System.out.println("   (Extra condiment charge applies)");
+                    }
+                }
+            } else {
+                System.out.println("Invalid selection. Please choose a number from the list.");
+            }
+        }
+    }
 
 
      private int getIntInput(String prompt) {
