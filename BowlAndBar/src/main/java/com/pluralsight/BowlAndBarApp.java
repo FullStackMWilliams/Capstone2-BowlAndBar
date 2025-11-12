@@ -55,9 +55,14 @@ public class BowlAndBarApp {
     private void displayHomeScreen() {
         System.out.println("\n======================================");
         System.out.println("HOME SCREEN");
-        System.out.println();
+        System.out.println("1) New Order");
+        System.out.println("0) Exit");
+        System.out.println("========================================");
 
     }
+
+
+    private void startnew
 }
 
 
