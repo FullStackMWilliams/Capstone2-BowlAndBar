@@ -228,7 +228,7 @@ public class BowlAndBarApp {
 
 
      private void addSide() {
-         System.out.println("\n======================================");
+         System.out.println("\n=========================================");
          System.out.println("ADD MAIN SIDE");
          System.out.println("=========================================");
 
