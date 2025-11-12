@@ -60,6 +60,7 @@ public class BowlAndBarApp {
         System.out.println("========================================");
 
     }
+
     private void displayOrderScreen() {
         boolean orderActive = true;
 
@@ -73,7 +74,20 @@ public class BowlAndBarApp {
             System.out.println("4) Checkout");
             System.out.println("0) Cancel Order");
             System.out.println("===============================================");
+
         }
+    }
+
+    private void addItem() {
+        System.out.println("\n================================================");
+        System.out.println("ADD ITEM");
+        System.out.println("===================================================");
+        System.out.println("Select item type:");
+        System.out.println("1) Smoothie");
+        System.out.println("2) Juice");
+        System.out.println("3) Yogurt Bowl");
+        System.out.println("0) Cancel");
+
     }
 }
 
