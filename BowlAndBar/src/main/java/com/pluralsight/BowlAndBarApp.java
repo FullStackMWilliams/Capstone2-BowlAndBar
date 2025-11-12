@@ -254,7 +254,10 @@ public class BowlAndBarApp {
              System.out.println("Invalid selection.");
              return null;
          }
-         return null;
+
+         ItemSize size = selectSize();
+         if (size == null) return null;
+
      }
 
 
