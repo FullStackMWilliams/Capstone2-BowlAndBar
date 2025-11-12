@@ -195,6 +195,20 @@ public class BowlAndBarApp {
 
          int sizeChoice = getIntInput("Choose: ");
          DrinkSize size = null;
+         switch (sizeChoice) {
+             case 1: size = DrinkSize.SMALL;
+                        break;
+
+             case 2: size = DrinkSize.MEDIUM;
+                        break;
+
+             case 3: size = DrinkSize.LARGE;
+                        break;
+
+             default:
+                 System.out.println("Invalid size.");
+                 return;
+         }
      }
 
 
