@@ -146,6 +146,15 @@ public class BowlAndBarApp {
         System.out.println("3) Yogurt Bowl");
         System.out.println("0) Cancel");
 
+        int itemType = getIntInput("Choose: ");
+        if (itemType == 0 ) return;
+
+        BowlItem item = null;
+
+        switch (itemType) {
+
+        }
+
     }
 
      private void addDrink() {
