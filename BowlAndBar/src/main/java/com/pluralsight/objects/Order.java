@@ -58,7 +58,7 @@ public class Order {
         StringBuilder sb = new StringBuilder();
         sb.append("\n===================================\n");
         sb.append("          BOWL & BAR ORDER           \n");
-        sb.append("=======================================");
+        sb.append("=======================================\n");
 
         if (!items.isEmpty()) {
             sb.append("ITEMS:\n");
