@@ -188,6 +188,12 @@ public class BowlAndBarApp {
              System.out.println((i + 1) + ") " + flavors[i]);
          }
 
+         int flavorsChoice = getIntInput("Choose: ") - 1;
+         if (flavorsChoice < 0 || flavorsChoice >= flavors.length) {
+             System.out.println("Invalid selection.");
+             return;
+         }
+
          System.out.println("\nSelect size");
          System.out.println("1) Small - $2.00");
          System.out.println("2) Medium - $2.50");
@@ -209,6 +215,10 @@ public class BowlAndBarApp {
                  System.out.println("Invalid size.");
                  return;
          }
+
+         Drink drink = new Drink(size, flavors[flavorsChoice]);
+         currentOrder.addDrink(drink);
+         System.out.println("Drink added to order!");
      }
 
 
@@ -232,8 +242,6 @@ public class BowlAndBarApp {
          Side side = new Side(types[choice]);
          currentOrder.addSide(side);
          System.out.println("Side added to order!");
-
-
      }
 
 
