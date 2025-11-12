@@ -223,6 +223,13 @@ public class BowlAndBarApp {
              System.out.println((i + 1) + ") " + types[i] + " - $1.50");
          }
 
+         int choice = getIntInput("Choose: ") - 1;
+         if (choice < 0 || choice >= types.length) {
+             System.out.println("Invalid selection");
+             return;
+         }
+
+
      }
 
 
