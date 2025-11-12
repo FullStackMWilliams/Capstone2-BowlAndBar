@@ -49,6 +49,7 @@ public class BowlAndBarApp {
     public void run() {
 
         System.out.println("\n========================================");
+        System.out.println("|                                      |");
         System.out.println("|        WELCOME TO BOWL & BAR!        |");
         System.out.println("|    Fresh Smoothies, Juices & Bowls   |");
         System.out.println("|                                      |");
