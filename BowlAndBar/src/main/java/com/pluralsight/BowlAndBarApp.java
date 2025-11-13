@@ -416,16 +416,13 @@ public class BowlAndBarApp {
         while (true) {
             int choice = getIntInput("Add topping (or 0 when done): ");
 
-            if (choice == 0) break;  // User is done
+            if (choice == 0) break;
 
-            // Convert to 0-based index
             int index = choice - 1;
 
             if (index >= 0 && index < options.length) {
-
                 item.addTopping(new Topping(options[index], category, false));
                 System.out.println("Added " + options[index]);
-
 
                 System.out.print("Would you like extra? (y/n): ");
                 String extra = scanner.nextLine().trim().toLowerCase();
@@ -433,19 +430,18 @@ public class BowlAndBarApp {
                     item.addTopping(new Topping(options[index], category, true));
                     System.out.println("Added extra " + options[index]);
 
-
                     if (category == ToppingCategory.PROTEIN) {
                         System.out.println("   (Extra protein charge applies)");
                     } else if (category == ToppingCategory.PREMIUM) {
                         System.out.println("   (Extra premium charge applies)");
                     } else if (category == ToppingCategory.REGULAR) {
-                        System.out.println("   (Extra regular topping charge applies)");
+                        System.out.println("   (Extra regular topping charge: $0.25-$0.75 based on size)");
                     } else if (category == ToppingCategory.CONDIMENT) {
-                        System.out.println("   (Extra condiment charge applies)");
+                        System.out.println("   (Extra condiment charge: $0.20-$0.60 based on size)");
                     }
                 }
             } else {
-                System.out.println("Invalid selection. Please choose a number from the list.");
+                System.out.println("Invalid selection. Please choose a number between 1 and " + options.length + ".");
             }
         }
     }
