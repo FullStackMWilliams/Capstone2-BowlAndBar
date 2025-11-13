@@ -3,7 +3,7 @@ package com.pluralsight.inheriters;
 import com.pluralsight.enums.ItemSize;
 
 public class Smoothie extends BowlItem {
-    private static final String[] TYPES =  {"Berry Blast", "Tropical Paradise","Green Machine","Chocolate Peanut"};
+    private static final String[] TYPES =  {"Berry Blast", "Tropical Paradise","Green Machine","Chocolate PeanutButter"};
 
     public Smoothie (ItemSize size, String type) {
         super(size, type);

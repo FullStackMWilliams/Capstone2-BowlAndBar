@@ -19,6 +19,8 @@ public class BowlAndBarApp {
     private Scanner scanner;
     private Order currentOrder;
 
+    // Imported toppings
+
     private static final String[] PROTEINS = {
             "Peanut Butter", "Almond Butter", "Protein Powder", "Hemp Seeds", "Chia Seeds", "Greek Yogurt"
     };
@@ -35,6 +37,7 @@ public class BowlAndBarApp {
             "Agave Syrup", "Maple Syrup", "Cinnamon", "Vanilla extract", "Coco powder", "Mint"
     };
 
+    // Non-locale Scanner/ forgot actual term
     public BowlAndBarApp() {
         scanner = new Scanner(System.in);
         currentOrder = null;
