@@ -325,66 +325,66 @@ public class BowlAndBarApp {
      }
 
 
-     private Juice createJuice() {
-
+    private Juice createJuice() {
         String[] types = Juice.getTypes();
-         System.out.println("\nSelect juice type:");
-         for(int i = 0; i < types.length; i++) {
-             System.out.println((i + 1) + ")" + types[i]);
-         }
+        int typeChoice = -1;
 
-         int typeChoice = getIntInput("Choose: ") - 1;
-         if (typeChoice < 0 || typeChoice >= types.length) {
-             System.out.println("Invalid selection.");
-             return null;
-         }
+        while (typeChoice < 0 || typeChoice >= types.length) {
+            System.out.println("\nSelect juice type:");
+            for (int i = 0; i < types.length; i++) {
+                System.out.println((i + 1) + ") " + types[i]);
+            }
 
-         ItemSize size = selectSize();
-         if (size == null) return null;
+            typeChoice = getIntInput("Choose: ") - 1;
+            if (typeChoice < 0 || typeChoice >= types.length) {
+                System.out.println("Invalid selection. Please choose a number from 1 to " + types.length + ".");
+            }
+        }
 
-         Juice juice = new Juice(size, types[typeChoice]);
+        ItemSize size = selectSize();
+        Juice juice = new Juice(size, types[typeChoice]);
 
-         addToppingToItem(juice);
+        addToppingToItem(juice);
 
-         System.out.println("Would you like cold pressed? (+$0.75) (y/n): ");
-         String special = scanner.nextLine().trim().toLowerCase();
-         if (special.equals("y") || special.equals("yes")) {
-             juice.setSpecialized(true);
-         }
+        System.out.println("Would you like cold pressed? (+$0.75) (y/n): ");
+        String special = scanner.nextLine().trim().toLowerCase();
+        if (special.equals("y") || special.equals("yes")) {
+            juice.setSpecialized(true);
+        }
 
         return juice;
-     }
+    }
 
 
-     private YogurtBowl createYogurtBowl() {
-
+    private YogurtBowl createYogurtBowl() {
         String[] types = YogurtBowl.getTypes();
-         System.out.println("\nSelect yogurt base:");
-         for (int i = 0; i < types.length; i++) {
-             System.out.println((i + 1) + ") " + types[i]);
-         }
+        int typeChoice = -1;
 
-         int typeChoice = getIntInput("Choose:");
-         if (typeChoice < 0 || typeChoice >= types.length) {
-             System.out.println("Invalid selection.");
-             return null;
-         }
-         ItemSize size = selectSize();
-         if (size == null)
-             return null;
+        while (typeChoice < 0 || typeChoice >= types.length) {
+            System.out.println("\nSelect yogurt base:");
+            for (int i = 0; i < types.length; i++) {
+                System.out.println((i + 1) + ") " + types[i]);
+            }
 
-         YogurtBowl bowl = new YogurtBowl(size, types[typeChoice]);
+            typeChoice = getIntInput("Choose: ") - 1;
+            if (typeChoice < 0 || typeChoice >= types.length) {
+                System.out.println("Invalid selection. Please choose a number from 1 to " + types.length + ".");
+            }
+        }
 
-         addToppingToItem(bowl);
+        ItemSize size = selectSize();
+        YogurtBowl bowl = new YogurtBowl(size, types[typeChoice]);
 
-         System.out.print("Would you like it as a layered bowl? (+1.25) (y/n): ");
-         String special = scanner.nextLine().trim().toLowerCase();
-         if (special.equals("y") || special.equals("yes")) {
-             bowl.setSpecialized(true);
-         }
+        addToppingToItem(bowl);
 
-         return bowl;
-     }
+        System.out.print("Would you like it as a layered bowl? (+$1.25) (y/n): ");
+        String special = scanner.nextLine().trim().toLowerCase();
+        if (special.equals("y") || special.equals("yes")) {
+            bowl.setSpecialized(true);
+        }
+
+        return bowl;
+    }
 
 
     private ItemSize selectSize() {
