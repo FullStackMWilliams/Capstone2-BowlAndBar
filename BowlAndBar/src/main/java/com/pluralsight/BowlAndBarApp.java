@@ -103,15 +103,15 @@ public class BowlAndBarApp {
         boolean orderActive = true;
 
         while (orderActive) {
-            System.out.println("\n============================================");
+            System.out.println("\n===============================");
             System.out.println("ORDER SCREEN");
-            System.out.println("============================================");
+            System.out.println("================================");
             System.out.println("1) Add Item");
             System.out.println("2) Add Drink");
             System.out.println("3) Add Main Side");
             System.out.println("4) Checkout");
             System.out.println("0) Cancel Order");
-            System.out.println("============================================");
+            System.out.println("=====================================");
 
             int choice = getIntInput("Select an option: ");
 
@@ -149,9 +149,9 @@ public class BowlAndBarApp {
         boolean validSelection = false;
 
         while (!validSelection) {
-            System.out.println("\n================================================");
+            System.out.println("\n================================");
             System.out.println("ADD ITEM");
-            System.out.println("===================================================");
+            System.out.println("================================");
             System.out.println("Select item type:");
             System.out.println("1) Smoothie");
             System.out.println("2) Juice");
@@ -195,9 +195,9 @@ public class BowlAndBarApp {
 
 
     private void addDrink() {
-        System.out.println("\n====================================");
+        System.out.println("\n================================");
         System.out.println("ADD DRINK");
-        System.out.println("=======================================");
+        System.out.println("================================");
 
         String[] flavors = Drink.getFlavors();
         int flavorChoice = -1;
@@ -249,9 +249,9 @@ public class BowlAndBarApp {
 
 
     private void addSide() {
-        System.out.println("\n=========================================");
+        System.out.println("\n================================");
         System.out.println("ADD MAIN SIDE");
-        System.out.println("=========================================");
+        System.out.println("================================");
 
         String[] types = Side.getTYPES();
         int choice = -1;
