@@ -294,35 +294,35 @@ public class BowlAndBarApp {
      }
 
 
-     private Smoothie createSmoothie() {
+    private Smoothie createSmoothie() {
+        String[] types = Smoothie.getTypes();
+        int typeChoice = -1;
 
-         String[] types = Smoothie.getTypes();
-         System.out.println("\nSelect smoothie type:");
-         for (int i = 0; i < types.length; i++) {
-             System.out.println((i + 1) + ") " + types[i]);
-         }
+        while (typeChoice < 0 || typeChoice >= types.length) {
+            System.out.println("\nSelect smoothie type:");
+            for (int i = 0; i < types.length; i++) {
+                System.out.println((i + 1) + ") " + types[i]);
+            }
 
-         int typeChoice = getIntInput("Choose: ") - 1;
-         if (typeChoice < 0 || typeChoice >= types.length) {
-             System.out.println("Invalid selection.");
-             return null;
-         }
+            typeChoice = getIntInput("Choose: ") - 1;
+            if (typeChoice < 0 || typeChoice >= types.length) {
+                System.out.println("Invalid selection. Please choose a number from 1 to " + types.length + ".");
+            }
+        }
 
-         ItemSize size = selectSize();
-         if (size == null) return null;
+        ItemSize size = selectSize();
+        Smoothie smoothie = new Smoothie(size, types[typeChoice]);
 
-         Smoothie smoothie = new Smoothie(size, types[typeChoice]);
+        addToppingToItem(smoothie);
 
-         addToppingToItem(smoothie);
+        System.out.println("Would you like to add a protein boost? (+$1.00) (y/n): ");
+        String special = scanner.nextLine().trim().toLowerCase();
+        if (special.equals("y") || special.equals("yes")) {
+            smoothie.setSpecialized(true);
+        }
 
-         System.out.println("Would you like to add a protein boost? (+1.00) (y/n): ");
-         String special = scanner.nextLine().trim().toLowerCase();
-         if (special.equals("y") || special.equals("yes")) {
-             smoothie.setSpecialized(true);
-         }
-
-         return smoothie;
-     }
+        return smoothie;
+    }
 
 
     private Juice createJuice() {
