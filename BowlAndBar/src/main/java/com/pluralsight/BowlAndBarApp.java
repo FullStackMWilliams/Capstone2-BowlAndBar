@@ -49,12 +49,12 @@ public class BowlAndBarApp {
 
     public void run() {
 
-        System.out.println("\n========================================");
-        System.out.println("|                                      |");
-        System.out.println("|        WELCOME TO BOWL & BAR!        |");
-        System.out.println("|    Fresh Smoothies, Juices & Bowls   |");
-        System.out.println("|                                      |");
-        System.out.println("========================================");
+        System.out.println("\n==========================================");
+        System.out.println("|                                        |");
+        System.out.println("|        WELCOME TO BOWL & BAR!          |");
+        System.out.println("|    Fresh Smoothies, Juices & Bowls     |");
+        System.out.println("|                                        |");
+        System.out.println("==========================================");
 
         boolean running = true;
 
@@ -103,7 +103,7 @@ public class BowlAndBarApp {
             System.out.println("\n============================================");
             System.out.println("ORDER SCREEN");
             System.out.println("============================================");
-            System.out.println("1) Add Item (Smoothie/Juice/Bowl)");
+            System.out.println("1) Add Item");
             System.out.println("2) Add Drink");
             System.out.println("3) Add Main Side");
             System.out.println("4) Checkout");
