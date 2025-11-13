@@ -415,7 +415,7 @@ public class BowlAndBarApp {
 
             if (special.equals("y") || special.equals("yes") ||
                     special.equals("n") || special.equals("no")) {
-                break;  // valid input → exit loop
+                break;
             }
 
             System.out.println("Invalid input. Please enter 'y' or 'n'.");
@@ -423,7 +423,10 @@ public class BowlAndBarApp {
 
         if (special.equals("y") || special.equals("yes")) {
             bowl.setSpecialized(true);
+        } else {
+            bowl.setSpecialized(false);
         }
+
 
         return bowl;
     }
@@ -434,8 +437,8 @@ public class BowlAndBarApp {
 
         while (size == null) {
             System.out.println("\nSelect size:");
-            System.out.println("1) Small - $3.50");
-            System.out.println("2) Medium - $9.00");
+            System.out.println("1) Small - $4.50");
+            System.out.println("2) Medium - $6.35");
             System.out.println("3) Large - $8.50");
 
             int sizeChoice = getIntInput("Choose: ");
