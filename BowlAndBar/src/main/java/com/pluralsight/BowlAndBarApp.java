@@ -408,8 +408,19 @@ public class BowlAndBarApp {
 
         addToppingToItem(bowl);
 
-        System.out.print("Would you like it as a layered bowl? (+$1.25) (y/n): ");
-        String special = scanner.nextLine().trim().toLowerCase();
+        String special;
+        while (true) {
+            System.out.print("Would you like it as a layered bowl? (+$1.25) (y/n): ");
+            special = scanner.nextLine().trim().toLowerCase();
+
+            if (special.equals("y") || special.equals("yes") ||
+                    special.equals("n") || special.equals("no")) {
+                break;  // valid input → exit loop
+            }
+
+            System.out.println("Invalid input. Please enter 'y' or 'n'.");
+        }
+
         if (special.equals("y") || special.equals("yes")) {
             bowl.setSpecialized(true);
         }
@@ -418,7 +429,7 @@ public class BowlAndBarApp {
     }
 
 
-    private ItemSize selectSize() {
+        private ItemSize selectSize() {
         ItemSize size = null;
 
         while (size == null) {
