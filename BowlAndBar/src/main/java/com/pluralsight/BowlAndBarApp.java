@@ -182,49 +182,57 @@ public class BowlAndBarApp {
     }
 
 
-     private void addDrink() {
-         System.out.println("\n====================================");
-         System.out.println("ADD DRINK");
-         System.out.println("=======================================");
+    private void addDrink() {
+        System.out.println("\n====================================");
+        System.out.println("ADD DRINK");
+        System.out.println("=======================================");
 
-         String[] flavors = Drink.getFlavors();
-         System.out.println("Select flavor:");
-         for (int i = 0; i < flavors.length; i++) {
-             System.out.println((i + 1) + ") " + flavors[i]);
-         }
+        String[] flavors = Drink.getFlavors();
+        int flavorChoice = -1;
 
-         int flavorsChoice = getIntInput("Choose: ") - 1;
-         if (flavorsChoice < 0 || flavorsChoice >= flavors.length) {
-             System.out.println("Invalid selection.");
-             return;
-         }
+        while (flavorChoice < 0 || flavorChoice >= flavors.length) {
+            System.out.println("Select flavor:");
+            for (int i = 0; i < flavors.length; i++) {
+                System.out.println((i + 1) + ") " + flavors[i]);
+            }
 
-         System.out.println("\nSelect size");
-         System.out.println("1) Small - $2.00");
-         System.out.println("2) Medium - $2.50");
-         System.out.println("3) Large - $3.50");
+            flavorChoice = getIntInput("Choose: ") - 1;
+            if (flavorChoice < 0 || flavorChoice >= flavors.length) {
+                System.out.println("Invalid selection. Please choose a number from 1 to " + flavors.length + ".");
+            }
+        }
 
-         int sizeChoice = getIntInput("Choose: ");
-         DrinkSize size = null;
-         switch (sizeChoice) {
-             case 1: size = DrinkSize.SMALL;
-                        break;
+        DrinkSize size = null;
 
-             case 2: size = DrinkSize.MEDIUM;
-                        break;
+        while (size == null) {
+            System.out.println("\nSelect size:");
+            System.out.println("1) Small - $2.00");
+            System.out.println("2) Medium - $2.50");
+            System.out.println("3) Large - $3.00");
 
-             case 3: size = DrinkSize.LARGE;
-                        break;
+            int sizeChoice = getIntInput("Choose: ");
+            switch (sizeChoice) {
+                case 1:
+                    size = DrinkSize.SMALL;
+                    break;
 
-             default:
-                 System.out.println("Invalid size.");
-                 return;
-         }
+                case 2:
+                    size = DrinkSize.MEDIUM;
+                    break;
 
-         Drink drink = new Drink(size, flavors[flavorsChoice]);
-         currentOrder.addDrink(drink);
-         System.out.println("Drink added to order!");
-     }
+                case 3:
+                    size = DrinkSize.LARGE;
+                    break;
+
+                default:
+                    System.out.println("Invalid size. Please choose 1, 2, or 3.");
+            }
+        }
+
+        Drink drink = new Drink(size, flavors[flavorChoice]);
+        currentOrder.addDrink(drink);
+        System.out.println("Drink added to order!");
+    }
 
 
     private void addSide() {
