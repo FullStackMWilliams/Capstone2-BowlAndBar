@@ -366,8 +366,19 @@ public class BowlAndBarApp {
 
         addToppingToItem(juice);
 
-        System.out.println("Would you like cold pressed? (+$0.75) (y/n): ");
-        String special = scanner.nextLine().trim().toLowerCase();
+        String special;
+        while (true) {
+            System.out.print("Would you like cold pressed? (+$0.75) (y/n): ");
+            special = scanner.nextLine().trim().toLowerCase();
+
+            if (special.equals("y") || special.equals("yes") ||
+                    special.equals("n") || special.equals("no")) {
+                break; // valid input
+            }
+
+            System.out.println("Invalid input. Please enter 'y' or 'n'.");
+        }
+
         if (special.equals("y") || special.equals("yes")) {
             juice.setSpecialized(true);
         }
