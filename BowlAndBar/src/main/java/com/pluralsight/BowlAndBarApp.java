@@ -227,27 +227,30 @@ public class BowlAndBarApp {
      }
 
 
-     private void addSide() {
-         System.out.println("\n=========================================");
-         System.out.println("ADD MAIN SIDE");
-         System.out.println("=========================================");
+    private void addSide() {
+        System.out.println("\n=========================================");
+        System.out.println("ADD MAIN SIDE");
+        System.out.println("=========================================");
 
-         String[] types = Side.getTYPES();
-         System.out.println("Select sides: ");
-         for (int i = 0; i < types.length; i++) {
-             System.out.println((i + 1) + ") " + types[i] + " - $1.50");
-         }
+        String[] types = Side.getTYPES();
+        int choice = -1;
 
-         int choice = getIntInput("Choose: ") - 1;
-         if (choice < 0 || choice >= types.length) {
-             System.out.println("Invalid selection");
-             return;
-         }
+        while (choice < 0 || choice >= types.length) {
+            System.out.println("Select sides:");
+            for (int i = 0; i < types.length; i++) {
+                System.out.println((i + 1) + ") " + types[i] + " - $1.50");
+            }
 
-         Side side = new Side(types[choice]);
-         currentOrder.addSide(side);
-         System.out.println("Side added to order!");
-     }
+            choice = getIntInput("Choose: ") - 1;
+            if (choice < 0 || choice >= types.length) {
+                System.out.println("Invalid selection. Please choose a number from 1 to " + types.length + ".");
+            }
+        }
+
+        Side side = new Side(types[choice]);
+        currentOrder.addSide(side);
+        System.out.println("Side added to order!");
+    }
 
 
      private boolean checkout() {
