@@ -143,41 +143,50 @@ public class BowlAndBarApp {
 
 
     private void addItem() {
-        System.out.println("\n================================================");
-        System.out.println("ADD ITEM");
-        System.out.println("===================================================");
-        System.out.println("Select item type:");
-        System.out.println("1) Smoothie");
-        System.out.println("2) Juice");
-        System.out.println("3) Yogurt Bowl");
-        System.out.println("0) Cancel");
+        boolean validSelection = false;
 
-        int itemType = getIntInput("Choose: ");
-        if (itemType == 0 ) return;
+        while (!validSelection) {
+            System.out.println("\n================================================");
+            System.out.println("ADD ITEM");
+            System.out.println("===================================================");
+            System.out.println("Select item type:");
+            System.out.println("1) Smoothie");
+            System.out.println("2) Juice");
+            System.out.println("3) Yogurt Bowl");
+            System.out.println("0) Cancel");
 
-        BowlItem item = null;
+            int itemType = getIntInput("Choose: ");
 
-        switch (itemType) {
-            case 1:
-                item = createSmoothie();
-                break;
-
-            case 2:
-                item = createJuice();
-                break;
-
-            case 3:
-                item = createYogurtBowl();
-                break;
-
-            default:
-                System.out.println("Invalid selection.");
+            if (itemType == 0) {
                 return;
-        }
+            }
 
-        if (item != null) {
-            currentOrder.addItem(item);
-            System.out.println("\nItem added to order!");
+            BowlItem item = null;
+
+            switch (itemType) {
+                case 1:
+                    item = createSmoothie();
+                    validSelection = true;
+                    break;
+
+                case 2:
+                    item = createJuice();
+                    validSelection = true;
+                    break;
+
+                case 3:
+                    item = createYogurtBowl();
+                    validSelection = true;
+                    break;
+
+                default:
+                    System.out.println("Invalid selection. Please choose 1, 2, 3, or 0.");
+            }
+
+            if (item != null) {
+                currentOrder.addItem(item);
+                System.out.println("\nItem added to order!");
+            }
         }
     }
 
