@@ -423,10 +423,7 @@ public class BowlAndBarApp {
 
         if (special.equals("y") || special.equals("yes")) {
             bowl.setSpecialized(true);
-        } else {
-            bowl.setSpecialized(false);
         }
-
 
         return bowl;
     }
