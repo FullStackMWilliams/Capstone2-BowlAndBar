@@ -387,22 +387,33 @@ public class BowlAndBarApp {
      }
 
 
-     private ItemSize selectSize() {
-         System.out.println("\nSelect size:");
-         System.out.println("1) Small - $4.50");
-         System.out.println("2) Medium - $6.35");
-         System.out.println("3) Large - $8.50");
+    private ItemSize selectSize() {
+        ItemSize size = null;
 
-         int sizeChoice = getIntInput("Choose: ");
-         switch (sizeChoice) {
-             case 1: return ItemSize.SMALL;
-             case 2: return ItemSize.MEDIUM;
-             case 3: return ItemSize.LARGE;
-             default:
-                 System.out.println("Invalid size.");
-                 return null;
-         }
-     }
+        while (size == null) {
+            System.out.println("\nSelect size:");
+            System.out.println("1) Small - $3.50");
+            System.out.println("2) Medium - $9.00");
+            System.out.println("3) Large - $8.50");
+
+            int sizeChoice = getIntInput("Choose: ");
+            switch (sizeChoice) {
+                case 1:
+                    size = ItemSize.SMALL;
+                    break;
+                case 2:
+                    size = ItemSize.MEDIUM;
+                    break;
+                case 3:
+                    size = ItemSize.LARGE;
+                    break;
+                default:
+                    System.out.println("Invalid size. Please choose 1, 2, or 3.");
+            }
+        }
+
+        return size;
+    }
 
 
      private void addToppingToItem(BowlItem item) {
