@@ -52,15 +52,15 @@ public class Topping {
             case PREMIUM:
                 if (extra) {
                     switch (size) {
-                        case SMALL: return 0.30;
-                        case MEDIUM: return 0.60;
-                        case LARGE: return 0.90;
+                        case SMALL: return 0.50;
+                        case MEDIUM: return 1.00;
+                        case LARGE: return 1.50;
                     }
                 } else {
                     switch (size) {
-                        case SMALL: return 0.75;
-                        case MEDIUM: return 1.50;
-                        case LARGE: return 2.25;
+                        case SMALL: return 1.00;
+                        case MEDIUM: return 2.50;
+                        case LARGE: return 3.25;
                     }
                 }
                 break;

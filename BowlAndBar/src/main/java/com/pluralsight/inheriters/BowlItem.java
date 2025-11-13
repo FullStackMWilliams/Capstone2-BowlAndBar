@@ -39,9 +39,9 @@ public abstract class BowlItem {
 
     protected double getBasePrice() {
         switch (size) {
-            case SMALL: return 3.50;
-            case MEDIUM: return 7.25;
-            case LARGE: return 9.50;
+            case SMALL: return 4.50;
+            case MEDIUM: return 6.35;
+            case LARGE: return 8.50;
             default: return 0.0;
         }
     }

@@ -202,7 +202,7 @@ public class BowlAndBarApp {
          System.out.println("\nSelect size");
          System.out.println("1) Small - $2.00");
          System.out.println("2) Medium - $2.50");
-         System.out.println("3) Large - $3.00");
+         System.out.println("3) Large - $3.50");
 
          int sizeChoice = getIntInput("Choose: ");
          DrinkSize size = null;
@@ -377,9 +377,9 @@ public class BowlAndBarApp {
 
      private ItemSize selectSize() {
          System.out.println("\nSelect size:");
-         System.out.println("1) Small - $");
-         System.out.println("2) Medium - $");
-         System.out.println("3) Large - $");
+         System.out.println("1) Small - $4.50");
+         System.out.println("2) Medium - $6.35");
+         System.out.println("3) Large - $8.50");
 
          int sizeChoice = getIntInput("Choose: ");
          switch (sizeChoice) {
