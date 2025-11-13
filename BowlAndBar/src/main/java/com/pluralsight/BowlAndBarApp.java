@@ -291,7 +291,7 @@ public class BowlAndBarApp {
          if (confirm.equals("y") || confirm.equals("yes")) {
 
              ReceiptWriter.writeReceipt(currentOrder);
-             System.out.println("\n Order confirmed! Thank you for your purchased!");
+             System.out.println("\n Order confirmed! Thank you for your purchase!");
              currentOrder = null;
              return true;
 
@@ -324,8 +324,19 @@ public class BowlAndBarApp {
 
         addToppingToItem(smoothie);
 
-        System.out.println("Would you like to add a protein boost? (+$1.00) (y/n): ");
-        String special = scanner.nextLine().trim().toLowerCase();
+        String special;
+        while (true) {
+            System.out.print("Would you like to add a protein boost? (+$1.00) (y/n): ");
+            special = scanner.nextLine().trim().toLowerCase();
+
+            if (special.equals("y") || special.equals("yes") ||
+                    special.equals("n") || special.equals("no")) {
+                break;
+            }
+
+            System.out.println("Invalid input. Please enter 'y' or 'n'.");
+        }
+
         if (special.equals("y") || special.equals("yes")) {
             smoothie.setSpecialized(true);
         }
