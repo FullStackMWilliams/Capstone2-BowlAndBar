@@ -230,6 +230,7 @@ public class BowlAndBarApp {
         }
 
         Drink drink = new Drink(size, flavors[flavorChoice]);
+
         currentOrder.addDrink(drink);
         System.out.println("Drink added to order!");
     }
