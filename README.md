@@ -59,7 +59,7 @@ bowl-and-bar/
 
 │       │       │   ├── ItemSize.java
 │       │       │   └── ToppingCategory.java
-│       │       ├── inheriters/
+│       │       ├── inheritors/
 │       │       │   ├── BowlItem.java (abstract class)
 │       │       │   ├── Juice.java
 │       │       │   ├── Smoothie.java
