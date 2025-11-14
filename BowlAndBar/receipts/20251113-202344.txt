@@ -1,0 +1,25 @@
+
+===================================
+          BOWL & BAR ORDER           
+===================================
+ITEMS:
+-----------------------------------
+1. Juice - Small Orange Fresh (Specialized)
+   Price: $5.25
+
+2. Juice - Small Orange Fresh (Specialized)
+ Toppings:
+     - Peanut Butter
+     - Almond Butter
+     - Almond Butter (Extra)
+     - Acai
+     - Acai (Extra)
+     - Apple
+     - Apple (Extra)
+     - Agave Syrup
+     - Agave Syrup (Extra)
+   Price: $9.70
+
+===============================================
+TOTAL: $14.95
+===============================================
