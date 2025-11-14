@@ -105,7 +105,7 @@ public class BowlAndBarApp {
         while (orderActive) {
             System.out.println("\n===============================");
             System.out.println("ORDER SCREEN");
-            System.out.println("================================");
+            System.out.println("===============================");
             System.out.println("1) Add Item");
             System.out.println("2) Add Drink");
             System.out.println("3) Add Main Side");
