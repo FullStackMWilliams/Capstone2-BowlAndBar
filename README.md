@@ -328,11 +328,11 @@ TOTAL: $14.50
 # 🤝 Contributing
 This is a capstone project for educational purposes. If you'd like to suggest improvements:
 
-Fork the repository
-Create a feature branch
-Commit your changes
-Push to the branch
-Open a Pull Request
+- Fork the repository
+- Create a feature branch
+- Commit your changes
+- Push to the branch
+- Open a Pull Request
 
 
 # 📄 License
