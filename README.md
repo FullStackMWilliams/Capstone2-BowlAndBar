@@ -55,8 +55,7 @@ bowl-and-bar/
 │       │   └── com.pluralsight/
 │       │       ├── BowlAndBarApp.java (main application)
 │       │       ├── enums/
-│       │       │   ├── DrinkSize.java <img width="3267" height="4092" alt="Bowl   Bar Capstone App-2025-11-13-223125" src="https://github.com/user-attachments/assets/c6d0bb0c-aed8-4c69-8a50-0ec54bb7e9c5" />
-
+│       │       │   ├── DrinkSize.java 
 │       │       │   ├── ItemSize.java
 │       │       │   └── ToppingCategory.java
 │       │       ├── inheritors/
@@ -81,6 +80,11 @@ bowl-and-bar/
 # Diagram
 
 <img width="1273" height="1199" alt="Screenshot 2025-11-13 193009" src="https://github.com/user-attachments/assets/1a6433b5-cf5e-455d-9403-3e43dad21366" />
+
+### Diagram link (for better readability)
+
+
+**https://www.mermaidchart.com/d/48ec888c-fe41-46fd-930e-94bac279b8a0**
 
 ---
 
@@ -328,11 +332,11 @@ TOTAL: $14.50
 # 🤝 Contributing
 This is a capstone project for educational purposes. If you'd like to suggest improvements:
 
-Fork the repository
-Create a feature branch
-Commit your changes
-Push to the branch
-Open a Pull Request
+- Fork the repository
+- Create a feature branch
+- Commit your changes
+- Push to the branch
+- Open a Pull Request
 
 
 # 📄 License
