@@ -12,11 +12,11 @@ Bowl & Bar is a command-line interface application designed to streamline the or
 
 ### Three Core Products:
 
-**Smoothies**: Berry Blast, Tropical Paradise, Green Machine, Chocolate Peanut
+**Smoothies (signature item code template/flow)**: Berry Blast, Tropical Paradise, Green Machine, Chocolate Peanut
 
-**Juices**: Orange Fresh, Apple Crisp, Carrot Ginger, Beet Energy
+**Juices (regualr item code template/flow)**: Orange Fresh, Apple Crisp, Carrot Ginger, Beet Energy
 
-**Yogurt Bowls**: Greek, Vanilla, Coconut, Plain
+**Yogurt Bowls(custom item code tmeplate/flow)**: Greek, Vanilla, Coconut, Plain
 
 
 ### Customization Options:
