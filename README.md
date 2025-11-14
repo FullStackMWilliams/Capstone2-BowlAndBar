@@ -81,7 +81,8 @@ bowl-and-bar/
 
 <img width="1273" height="1199" alt="Screenshot 2025-11-13 193009" src="https://github.com/user-attachments/assets/1a6433b5-cf5e-455d-9403-3e43dad21366" />
 
-### Diagram link
+### Diagram link (for better readability)
+
 
 **https://www.mermaidchart.com/d/48ec888c-fe41-46fd-930e-94bac279b8a0**
 
