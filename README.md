@@ -16,7 +16,7 @@ Bowl & Bar is a command-line interface application designed to streamline the or
 
 **Juices (regualr item code template/flow)**: Orange Fresh, Apple Crisp, Carrot Ginger, Beet Energy
 
-**Yogurt Bowls(custom item code tmeplate/flow)**: Greek, Vanilla, Coconut, Plain
+**Yogurt Bowls (custom item code tmeplate/flow)**: Greek, Vanilla, Coconut, Plain
 
 
 ### Customization Options:
