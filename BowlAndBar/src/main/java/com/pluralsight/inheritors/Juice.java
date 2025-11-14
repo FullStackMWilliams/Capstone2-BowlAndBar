@@ -1,11 +1,11 @@
-package com.pluralsight.inheriters;
+package com.pluralsight.inheritors;
 
 import com.pluralsight.enums.ItemSize;
 
-public class Smoothie extends BowlItem {
-    private static final String[] TYPES =  {"Berry Blast", "Tropical Paradise","Green Machine","Chocolate PeanutButter"};
+public class Juice extends BowlAndBarItem {
+    private static final String[] TYPES = {"Orange Fresh", "Apple Crisp", "Carrot Ginger", "Beet Energy"};
 
-    public Smoothie (ItemSize size, String type) {
+    public Juice(ItemSize size, String type) {
         super(size, type);
     }
 
@@ -17,13 +17,13 @@ public class Smoothie extends BowlItem {
     public double getPrice() {
         double price = getBasePrice() + getToppingsPrice();
         if (specialized) {
-            price += 1.00;
+            price += 0.75;
         }
         return price;
     }
 
     @Override
     public String toString() {
-        return "Smoothie - " + super.toString();
+        return "Juice - " + super.toString();
     }
 }

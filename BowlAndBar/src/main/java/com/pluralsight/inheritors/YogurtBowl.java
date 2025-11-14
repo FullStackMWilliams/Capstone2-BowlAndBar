@@ -1,11 +1,11 @@
-package com.pluralsight.inheriters;
+package com.pluralsight.inheritors;
 
 // this class will help us
 
 
 import com.pluralsight.enums.ItemSize;
 
-public class YogurtBowl extends BowlItem {
+public class YogurtBowl extends BowlAndBarItem {
     private static final String[] TYPES = {"Greek Yogurt","Vanilla Yogurt","Coconut Yogurt", "Plain Yogurt"};
 
     public YogurtBowl(ItemSize size, String type) {

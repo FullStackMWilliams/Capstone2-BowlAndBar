@@ -1,12 +1,12 @@
 package com.pluralsight.objects;
 
-import com.pluralsight.inheriters.BowlItem;
+import com.pluralsight.inheritors.BowlAndBarItem;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
-    private List<BowlItem> items;
+    private List<BowlAndBarItem> items;
     private List<Drink> drinks;
     private List<Side> sides;
 
@@ -16,7 +16,7 @@ public class Order {
         this.sides = new ArrayList<>();
     }
 
-    public void addItem(BowlItem item) {
+    public void addItem(BowlAndBarItem item) {
         items.add(item);
     }
 
@@ -41,7 +41,7 @@ public class Order {
 
     public double getTotalPrice() {
         double total = 0.0;
-        for (BowlItem item : items) {
+        for (BowlAndBarItem item : items) {
             total += item.getPrice();
         }
         for (Drink drink : drinks) {

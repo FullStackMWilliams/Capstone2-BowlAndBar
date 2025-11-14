@@ -3,13 +3,12 @@ package com.pluralsight;
 import com.pluralsight.enums.DrinkSize;
 import com.pluralsight.enums.ItemSize;
 import com.pluralsight.enums.ToppingCategory;
-import com.pluralsight.inheriters.BowlItem;
-import com.pluralsight.inheriters.Juice;
-import com.pluralsight.inheriters.Smoothie;
-import com.pluralsight.inheriters.YogurtBowl;
+import com.pluralsight.inheritors.BowlAndBarItem;
+import com.pluralsight.inheritors.Juice;
+import com.pluralsight.inheritors.Smoothie;
+import com.pluralsight.inheritors.YogurtBowl;
 import com.pluralsight.objects.*;
 
-import javax.swing.text.Style;
 import java.util.Scanner;
 
 
@@ -164,7 +163,7 @@ public class BowlAndBarApp {
                 return;
             }
 
-            BowlItem item = null;
+            BowlAndBarItem item = null;
 
             switch (itemType) {
                 case 1:
@@ -461,7 +460,7 @@ public class BowlAndBarApp {
     }
 
 
-     private void addToppingToItem(BowlItem item) {
+     private void addToppingToItem(BowlAndBarItem item) {
 
         addToppingCategory(item,"PROTEINS",PROTEINS,ToppingCategory.PROTEIN);
 
@@ -473,7 +472,7 @@ public class BowlAndBarApp {
      }
 
 
-    private void addToppingCategory(BowlItem item, String categoryName, String[] options, ToppingCategory category) {
+    private void addToppingCategory(BowlAndBarItem item, String categoryName, String[] options, ToppingCategory category) {
         System.out.println("\n" + categoryName + ":");
 
         for (int i = 0; i < options.length; i++) {

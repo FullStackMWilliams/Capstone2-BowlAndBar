@@ -1,4 +1,4 @@
-package com.pluralsight.inheriters;
+package com.pluralsight.inheritors;
 
 import com.pluralsight.objects.Topping;
 import com.pluralsight.enums.ItemSize;
@@ -6,13 +6,13 @@ import com.pluralsight.enums.ItemSize;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class BowlItem {
+public abstract class BowlAndBarItem {
     protected ItemSize size;
     protected String type;
     protected List<Topping> toppings;
     protected boolean specialized;
 
-    public BowlItem(ItemSize size, String type) {
+    public BowlAndBarItem(ItemSize size, String type) {
         this.size = size;
         this.type = type;
         this.toppings = new ArrayList<>();
