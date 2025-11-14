@@ -462,13 +462,13 @@ public class BowlAndBarApp {
 
      private void addToppingToItem(BowlAndBarItem item) {
 
-        addToppingCategory(item,"PROTEINS",PROTEINS,ToppingCategory.PROTEIN);
+        addToppingCategory(item,"PROTEINS TOPPINGS ($1.00-$3.00 BASED ON SIZE)",PROTEINS,ToppingCategory.PROTEIN);
 
-        addToppingCategory(item,"PREMIUM TOPPINGS",PREMIUM_TOPPINGS,ToppingCategory.PREMIUM);
+        addToppingCategory(item,"PREMIUM TOPPINGS ($1.00-$3.25 BASED ON SIZE)",PREMIUM_TOPPINGS,ToppingCategory.PREMIUM);
 
-        addToppingCategory(item,"REGULAR TOPPINGS",REGULAR_TOPPINGS,ToppingCategory.REGULAR);
+        addToppingCategory(item,"REGULAR TOPPINGS (FREE UNLESS EXTRA)",REGULAR_TOPPINGS,ToppingCategory.REGULAR);
 
-        addToppingCategory(item,"CONDIMENTS",CONDIMENTS,ToppingCategory.CONDIMENT);
+        addToppingCategory(item,"CONDIMENTS (FREE UNLESS EXTRA)",CONDIMENTS,ToppingCategory.CONDIMENT);
      }
 
 
@@ -498,13 +498,13 @@ public class BowlAndBarApp {
                     System.out.println("Added extra " + options[index]);
 
                     if (category == ToppingCategory.PROTEIN) {
-                        System.out.println("   (Extra protein charge applies)");
+                        System.out.println("   (Extra protein charge applied: $0.50-$1.50 based on size)");
                     } else if (category == ToppingCategory.PREMIUM) {
-                        System.out.println("   (Extra premium charge applies)");
+                        System.out.println("   (Extra premium charge applied: $0.50-$1.50 based on size)");
                     } else if (category == ToppingCategory.REGULAR) {
-                        System.out.println("   (Extra regular topping charge: $0.25-$0.75 based on size)");
+                        System.out.println("   (Extra regular topping charge applied: $0.25-$0.75 based on size)");
                     } else if (category == ToppingCategory.CONDIMENT) {
-                        System.out.println("   (Extra condiment charge: $0.20-$0.60 based on size)");
+                        System.out.println("   (Extra condiment charge applied: $0.20-$0.60 based on size)");
                     }
                 }
             } else {
