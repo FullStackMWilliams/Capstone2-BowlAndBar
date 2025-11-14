@@ -55,8 +55,7 @@ bowl-and-bar/
 │       │   └── com.pluralsight/
 │       │       ├── BowlAndBarApp.java (main application)
 │       │       ├── enums/
-│       │       │   ├── DrinkSize.java <img width="3267" height="4092" alt="Bowl   Bar Capstone App-2025-11-13-223125" src="https://github.com/user-attachments/assets/c6d0bb0c-aed8-4c69-8a50-0ec54bb7e9c5" />
-
+│       │       │   ├── DrinkSize.java 
 │       │       │   ├── ItemSize.java
 │       │       │   └── ToppingCategory.java
 │       │       ├── inheritors/
