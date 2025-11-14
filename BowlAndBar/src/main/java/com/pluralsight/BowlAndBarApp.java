@@ -236,7 +236,7 @@ public class BowlAndBarApp {
                     break;
 
                 default:
-                    System.out.println("Invalid size. Please choose 1, 2, or 3.");
+                    System.out.println("Invalid size. Please choose: 1, 2, or 3.");
             }
         }
 
@@ -336,7 +336,7 @@ public class BowlAndBarApp {
                 break;
             }
 
-            System.out.println("Invalid input. Please enter 'y' or 'n'.");
+            System.out.println("Invalid input. Please enter: 'y' or 'n'.");
         }
 
         if (special.equals("y") || special.equals("yes")) {
@@ -378,7 +378,7 @@ public class BowlAndBarApp {
                 break; // valid input
             }
 
-            System.out.println("Invalid input. Please enter 'y' or 'n'.");
+            System.out.println("Invalid input. Please enter: 'y' or 'n'.");
         }
 
         if (special.equals("y") || special.equals("yes")) {
@@ -420,7 +420,7 @@ public class BowlAndBarApp {
                 break;
             }
 
-            System.out.println("Invalid input. Please enter 'y' or 'n'.");
+            System.out.println("Invalid input. Please enter: 'y' or 'n'.");
         }
 
         if (special.equals("y") || special.equals("yes")) {
@@ -462,9 +462,9 @@ public class BowlAndBarApp {
 
      private void addToppingToItem(BowlAndBarItem item) {
 
-        addToppingCategory(item,"PROTEINS TOPPINGS ($1.00-$3.00 BASED ON SIZE)",PROTEINS,ToppingCategory.PROTEIN);
+        addToppingCategory(item,"PROTEINS TOPPINGS (S $1.00, M $2.00, L $3.00)",PROTEINS,ToppingCategory.PROTEIN);
 
-        addToppingCategory(item,"PREMIUM TOPPINGS ($1.00-$3.25 BASED ON SIZE)",PREMIUM_TOPPINGS,ToppingCategory.PREMIUM);
+        addToppingCategory(item,"PREMIUM TOPPINGS (S $1.00, M $2.50, L $3.25)",PREMIUM_TOPPINGS,ToppingCategory.PREMIUM);
 
         addToppingCategory(item,"REGULAR TOPPINGS (FREE UNLESS EXTRA)",REGULAR_TOPPINGS,ToppingCategory.REGULAR);
 
