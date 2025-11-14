@@ -1,0 +1,20 @@
+
+===================================
+          BOWL & BAR ORDER           
+===================================
+ITEMS:
+-----------------------------------
+1. Smoothie - Small Berry Blast (Specialized)
+   Price: $5.50
+
+2. Smoothie - Small Berry Blast
+ Toppings:
+     - Peanut Butter
+     - Acai
+     - Apple
+     - Agave Syrup
+   Price: $6.50
+
+===============================================
+TOTAL: $12.00
+===============================================
