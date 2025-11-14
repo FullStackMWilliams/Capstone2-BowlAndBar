@@ -80,7 +80,6 @@ bowl-and-bar/
 
 # Diagram
 
-<img width="3267" height="4092" alt="Bowl   Bar Capstone App-2025-11-13-223125" src="https://github.com/user-attachments/assets/a908a756-1a21-4bec-9658-90ee65440d78" />
 
 ---
 
