@@ -1,0 +1,25 @@
+
+===================================
+          BOWL & BAR ORDER           
+===================================
+ITEMS:
+-----------------------------------
+1. Yogurt Bowl - Small Vanilla Yogurt
+ Toppings:
+     - Peanut Butter
+   Price: $5.50
+
+2. Yogurt Bowl - Large Greek Yogurt (Specialized)
+ Toppings:
+     - Almond Butter
+     - Apple
+     - Pineapple
+     - Granola
+     - Granola (Extra)
+     - Agave Syrup
+     - Cinnamon
+   Price: $13.50
+
+===============================================
+TOTAL: $19.00
+===============================================
