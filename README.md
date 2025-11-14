@@ -80,7 +80,7 @@ bowl-and-bar/
 
 # Diagram
 
-
+![IMG_0523](https://github.com/user-attachments/assets/eea1d2d8-6137-43eb-9261-0351c35b556e)
 ---
 
 # 🚀 Getting Started
