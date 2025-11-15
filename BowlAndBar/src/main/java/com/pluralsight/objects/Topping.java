@@ -28,7 +28,8 @@ public class Topping {
         return extra;
     }
 
-    //  Switch cases for toppings/topping options and prices
+
+    // Get Price method/ Switch cases for toppings/topping options and prices
 
     public double getPrice(ItemSize size) {
         double price = 0.0;
