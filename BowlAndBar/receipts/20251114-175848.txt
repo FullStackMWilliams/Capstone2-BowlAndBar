@@ -1,21 +1,15 @@
 
 ===================================
           BOWL & BAR ORDER           
-=======================================ITEMS:
+===================================
+ITEMS:
 -----------------------------------
-1. Yogurt Bowl - Medium Coconut Yogurt (Specialized)
+1. Smoothie - Medium Tropical Paradise
  Toppings:
      - Peanut Butter
-     - Hemp Seeds
      - Acai
-     - Acai (Extra)
-     - Matcha
-     - Honey
-     - Apple
-     - Cacao Nibs
-     - Cinnamon
-   Price: $16.10
+   Price: $10.85
 
 ===============================================
-TOTAL: $16.10
+TOTAL: $10.85
 ===============================================

@@ -1,20 +1,23 @@
 
 ===================================
           BOWL & BAR ORDER           
-=======================================
+===================================
 ITEMS:
 -----------------------------------
-1. Juice - Medium Orange Fresh (Specialized)
-   Price: $8.00
+1. Yogurt Bowl - Small Greek Yogurt (Specialized)
+ Toppings:
+     - Peanut Butter
+     - Acai
+   Price: $7.75
 
 DRINKS:
 --------------------------------------
-1. Medium Lemonade - $2.50
+1. Small Water - $2.00
 
 SIDES: 
 -----------------------------------------
-1. Protein Bar - $1.50
+1. Energy Bites - $1.50
 
 ===============================================
-TOTAL: $12.00
+TOTAL: $11.25
 ===============================================
