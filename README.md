@@ -12,11 +12,11 @@ Bowl & Bar is a command-line interface application designed to streamline the or
 
 ### Three Core Products:
 
-**Smoothies**: Berry Blast, Tropical Paradise, Green Machine, Chocolate Peanut
+**Smoothies (signature item code template/flow)**: Berry Blast, Tropical Paradise, Green Machine, Chocolate Peanut
 
-**Juices**: Orange Fresh, Apple Crisp, Carrot Ginger, Beet Energy
+**Juices (regualr item code template/flow)**: Orange Fresh, Apple Crisp, Carrot Ginger, Beet Energy
 
-**Yogurt Bowls**: Greek, Vanilla, Coconut, Plain
+**Yogurt Bowls (custom item code tmeplate/flow)**: Greek, Vanilla, Coconut, Plain
 
 
 ### Customization Options:
@@ -85,6 +85,19 @@ bowl-and-bar/
 
 
 **https://www.mermaidchart.com/d/48ec888c-fe41-46fd-930e-94bac279b8a0**
+
+---
+
+# App Screenshots
+
+<img width="1919" height="1130" alt="Screenshot 2025-11-14 175111" src="https://github.com/user-attachments/assets/c0778cbf-c3f2-4adc-976e-b747dd5caa22" />
+<img width="1919" height="1143" alt="Screenshot 2025-11-14 175136" src="https://github.com/user-attachments/assets/5823445b-56c2-4b49-800e-b727739583f9" />
+<img width="1919" height="1127" alt="Screenshot 2025-11-14 175205" src="https://github.com/user-attachments/assets/989e2821-04bf-4535-920a-b0acf9ef94b7" />
+<img width="1919" height="1126" alt="Screenshot 2025-11-14 175441" src="https://github.com/user-attachments/assets/10a14815-84c9-488f-9bfa-c6d2f0941d96" />
+<img width="1917" height="1128" alt="Screenshot 2025-11-14 175637" src="https://github.com/user-attachments/assets/1ae39372-bc47-444d-8451-c872e05f9cdb" />
+<img width="1917" height="1128" alt="Screenshot 2025-11-14 175825" src="https://github.com/user-attachments/assets/5bfd4913-65d4-4a21-a42a-a5a3ede5cc1d" />
+<img width="1919" height="1128" alt="Screenshot 2025-11-14 175914" src="https://github.com/user-attachments/assets/7ea2656b-02d7-4f36-af22-9fde1fe4ff11" />
+
 
 ---
 
