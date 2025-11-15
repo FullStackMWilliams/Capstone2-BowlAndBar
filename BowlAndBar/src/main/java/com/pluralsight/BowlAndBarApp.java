@@ -41,10 +41,11 @@ public class BowlAndBarApp {
     };
 
 
-    // Non-locale Scanner
+    // Bowl and Bar app method
+
     public BowlAndBarApp() {
-        scanner = new Scanner(System.in);
-        currentOrder = null;
+        scanner = new Scanner(System.in);  // Non-locale Scanner
+        currentOrder = null; // Initializing current order var
     }
 
 
